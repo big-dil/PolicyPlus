@@ -21,7 +21,7 @@ jobs:
       run: .\version.bat
       
     - name: Build Policy Plus
-      run: msbuild PolicyPlus.sln /p:Configuration=Release /p:Platform="Any CPU"
+      run: msbuild PolicyPlus\PolicyPlus.sln /p:Configuration=Release /p:Platform="Any CPU"
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
